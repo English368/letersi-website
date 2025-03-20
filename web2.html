@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title> <!-- Title in the tab (browser title) -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: flex-start; /* Align content to the top */
+      align-items: flex-start;
+      flex-direction: column;
+      height: 100%; /* Adjusted height */
+      margin: 0;
+      padding-top: 50px; /* Adjusted padding-top for spacing */
+    }
+
+    h1 {
+      text-align: center; /* Centers the text */
+      color: #333;
+      font-size: 2.5em; /* Adjust the title size */
+      margin-bottom: 20px; /* Space between the title and the grid */
+      margin-top: 30px; /* Adds space at the top to prevent the title from being cut off */
+      width: 100%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust columns */
+      grid-gap: 20px; /* Gap between sections */
+      padding: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto; /* Center the grid container */
+    }
+
+    .section {
+      background: linear-gradient(135deg, #f0f0f0 0%, #d9d9d9 100%); /* Subtle gradient background */
+      border: 2px solid #ccc;
+      border-radius: 12px; /* Rounded corners */
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      text-decoration: none;
+      background-size: 200% 200%; /* Prepare for animation */
+    }
+
+    .section img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover effects for sections */
+    .section:hover {
+      transform: scale(1.05); /* Grow the section */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+      background: linear-gradient(135deg, #ff9b9b 0%, #f5c6cb 100%); /* New gradient effect */
+    }
+
+    /* Hover effects for images */
+    .section:hover img {
+      transform: scale(1.1); /* Slight zoom on hover */
+    }
+
+    /* Hover effects for text */
+    .section:hover p {
+      color: #ff6347; /* Change text color to tomato red */
+    }
+
+    /* Remove text-decoration on links */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <!-- Title Section -->
+  <h1>Programi Matura</h1>
+
+  <div class="container">
+    <!-- Section 1 -->
+    <a href="https://example.com/1" class="section">
+      <img src="https://tiranabook.al/wp-content/uploads/2025/02/product_67bdfbb09acf0.jpg" alt="Cikli i Kreshnikeve">
+      <p>"Cikli i Kreshnikeve"</p>
+    </a>
+    <!-- Section 2 -->
+    <a href="https://example.com/2" class="section">
+      <img src="https://cloudfront.bukinist.al/2779/iliada.jpg" alt="Iliada">
+      <p>"Iliada"</p>
+    </a>
+    <!-- Section 3 -->
+    <a href="https://example.com/3" class="section">
+      <img src="https://tiranabook.al/wp-content/uploads/2022/09/03671.jpg" alt="Prometeu i Lidhur">
+      <p>"Prometeu i Lidhur"</p>
+    </a>
+    <!-- Section 4 -->
+    <a href="https://example.com/4" class="section">
+      <img src="https://bum.al/wp-content/uploads/2023/05/B05208.jpg" alt="Komedia Hyjnore">
+      <p>"Komedia Hyjnore"</p>
+    </a>
+    <!-- Section 5 -->
+    <a href="https://example.com/5" class="section">
+      <img src="https://cloudfront.bukinist.al/19034-large_default/hamleti.jpg" alt="Hamleti">
+      <p>"Hamleti"</p>
+    </a>
+    <!-- Section 6 -->
+    <a href="https://example.com/6" class="section">
+      <img src="https://bookland.al/wp-content/uploads/2024/04/fausti.jpg" alt="Fausti">
+      <p>"Fausti"</p>
+    </a>
+    <!-- Section 7 -->
+    <a href="https://example.com/7" class="section">
+      <img src="https://cloudfront.bukinist.al/16490/katedralja-e-parisit.jpg" alt="Katedralja e Parisit">
+      <p>"Katedralja e Parisit"</p>
+    </a>
+    <!-- Section 8 -->
+    <a href="https://example.com/8" class="section">
+      <img src="https://cloudfront.bukinist.al/21520/kenget-e-milosaos-bk.jpg" alt="Kenget e Milosaos">
+      <p>"Kenget e Milosaos"</p>
+    </a>
+    <!-- Section 9 -->
+    <a href="https://example.com/9" class="section">
+      <img src="https://cloudfront.bukinist.al/20107-home_default/bagetia-e-bujqesia-lulet-e-veres-reklama.jpg" alt="Lulet e veres">
+      <p>"Lulet e veres"</p>
+    </a>
+    <!-- Section 10 -->
+    <a href="https://example.com/10" class="section">
+      <img src="https://bookland.al/wp-content/uploads/2023/05/xha-gorioi.jpg" alt="Xha Gorioi">
+      <p>"Xha Gorioi"</p>
+    </a>
+    <!-- Section 11 -->
+    <a href="https://example.com/11" class="section">
+      <img src="https://shtepia.b-cdn.net/store/7787-large_default/metamorfoza-franc-kafka.jpg" alt="Metamorfoza">
+      <p>"Metamorfoza"</p>
+    </a>
+    <!-- Section 12 -->
+    <a href="https://example.com/12" class="section">
+      <img src="https://www.radiandradi.com/wp-content/uploads/2016/12/lasgushi.ylli_.zemres.jpg" alt="Ylli i Zemres">
+      <p>"Ylli i Zemres"</p>
+    </a>
+    <!-- Section 13 -->
+    <a href="https://example.com/13" class="section">
+      <img src="https://supermart.al/images/detailed/202/B06962.jpg" alt="Migjeni">
+      <p>"Migjeni"</p>
+    </a>
+    <!-- Section 14 -->
+    <a href="https://example.com/14" class="section">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shkelqimi-dhe-renia-e-shokut-Zylo.jpg" alt="Shkelqimi dhe renia e shokut Zylo">
+      <p>"Shkelqimi dhe renia e shokut Zylo"</p>
+    </a>
+    <!-- Section 15 -->
+    <a href="https://example.com/15" class="section">
+      <img src="https://cloudfront.bukinist.al/11265-large_default/pallati-i-endrrave.jpg" alt="Pallati i Endrrave">
+      <p>"Pallati i Endrrave"</p>
+    </a>
+    <!-- Section 16 -->
+    <a href="https://example.com/16" class="section">
+      <img src="https://cloudfront.bukinist.al/19015/lirike-me-shi.jpg" alt="Lirike me shi">
+      <p>"Lirike me shi"</p>
+    </a>
+  </div>
+</body>
+</html>
+
+
+
+
+

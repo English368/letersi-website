@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Main container to hold everything */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Style for images at the top */
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 10px;  /* Reduced gap between images */
+            position: relative;  /* Position relative to place text over images */
+        }
+
+        .top-image {
+            width: 48%;  /* Made images bigger by increasing width */
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;  /* Smooth transition effect */
+        }
+
+        /* Tilt effect */
+        .top-image:first-child {
+            transform: rotate(0deg);  /* Tilt the first image slightly to the left */
+        }
+
+        .top-image:last-child {
+            transform: rotate(0deg);  /* Tilt the second image slightly to the right */
+        }
+
+        /* Positioning for "Maturanti" text over the images */
+        .maturanti-text {
+            position: absolute;  /* Position the text over the images */
+            top: 50%;  /* Place the text in the vertical center */
+            left: 50%;  /* Place the text in the horizontal center */
+            transform: translate(-50%, -50%);  /* Adjust to truly center the text */
+            color: #fff;  /* White text for contrast */
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Shadow for better visibility */
+            z-index: 2;  /* Ensure it's above the images */
+            white-space: nowrap;  /* Prevent text from breaking into multiple lines */
+        }
+
+        /* Maturanti and Slogani section */
+        .maturanti-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .maturanti-section h1 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .maturanti-section p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Style for sections */
+        .sections {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .section {
+            width: 48%;  /* Increase the width of the sections */
+            background-color: #e0e0e0;
+            padding: 30px;  /* Increase padding for more space inside the sections */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 28px;  /* Increase font size of section titles */
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 30px;  /* Increase font size of text */
+            color: #666;
+        }
+
+        /* Hyperlink style */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Images at the top with text over it -->
+        <div class="images">
+            <img src="https://www.russellbooks.com/wp-content/uploads/2024/11/general-vintage-dkkdk.jpg" alt="Image 1" class="top-image">
+            <img src="https://www.bbrarebooks.com/images/custom/CONTENT_THUMBNAILS__0002_NEW_ARRIVALS.png" alt="Image 2" class="top-image">
+
+            <!-- Maturanti text over both images -->
+            <div class="maturanti-text">
+                Maturanti "Muharrem Collaku"
+            </div>
+        </div>
+
+        <!-- Maturanti and Slogani section -->
+        <div class="maturanti-section">
+            <p>Slogani</p>
+        </div>
+
+        <!-- Sections with hyperlinks -->
+        <div class="sections">
+            <div class="section" id="gjuha-shqipe">
+                <a href="https://example.com/gjuha-shqipe">
+                    <h2>Gjuha Shqipe</h2>
+                    <p>This is the section for Gjuha Shqipe.</p>
+                </a>
+            </div>
+            <div class="section" id="letersi">
+                <a href="web2.html">
+                    <h2>Letersi</h2>
+                    <p>This is the section for Letersi.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
